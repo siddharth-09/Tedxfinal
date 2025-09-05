@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.faq-container {
+  margin: 0 auto;
+  /* Responsive padding using clamp for smooth scaling */
+  padding-left: clamp(1rem, 5vw, 10rem);
+  padding-right: clamp(1rem, 5vw, 10rem);
+  /* Add vertical padding */
+  padding-top: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+  width: 100%;
+  font-family: 'Hind', sans-serif;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.faq-container h2{
+  position: relative;
+  /* Responsive font size */
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.faq-accordion {
+  position: relative;
+  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.faq-accordion-item {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e513;
+}
+
+.faq-accordion-item .faq-button.faq-expanded {
+  border-bottom: 1px solid #eb002796;
+}
+
+.faq-button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  /* Responsive padding */
+  padding: clamp(2rem, 2vw, 1rem) 0;
+  color: #ffffff;
+  /* Responsive font size */
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  /* Add padding for icon space */
+  padding-right: clamp(2.5rem, 6vw, 4rem);
+}
+
+.faq-button:hover,
+.faq-button:focus {
+  cursor: pointer;
+  color: white;
+}
+
+.faq-button:hover .faq-icon,
+.faq-button:focus .faq-icon {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.faq-accordion-title {
+  padding: clamp(0.5rem, 2vw, 1em) clamp(1rem, 3vw, 1.5em) clamp(0.5rem, 2vw, 1em) 0;
+  line-height: 1.4;
+}
+
+.faq-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* Responsive icon size */
+  width: clamp(20px, 4vw, 30px);
+  height: clamp(20px, 4vw, 30px);
+  color: currentColor;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Icon image responsive sizing */
+.faq-icon img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.faq-button.faq-expanded {
+  color: #eb0027;
+}
+
+.faq-button.faq-expanded .faq-icon {
+  color: #eb0028;
+}
+
+.faq-accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.faq-accordion-content.faq-open {
+  opacity: 1;
+  /* Responsive max-height */
+  max-height: clamp(8rem, 20vh, 12rem);
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.faq-accordion-content p {
+  /* Responsive font size */
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  font-weight: 300;
+  /* Responsive margin */
+  margin: clamp(1rem, 3vw, 2rem) 0;
+  line-height: 1.6;
+  padding-right: clamp(1rem, 3vw, 2rem);
+}
+
+/* Media Queries for specific breakpoints */
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .faq-container {
+    min-height: 50vh;
+  }
+  
+  .faq-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-accordion-content.faq-open {
+    max-height: 15rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .faq-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    min-height: 40vh;
+  }
+  
+  .faq-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-button {
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    padding-right: 2.5rem;
+  }
+  
+  .faq-accordion-title {
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .faq-accordion-content p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    padding-right: 1rem;
+  }
+  
+  .faq-accordion-content.faq-open {
+    max-height: 20rem; /* More space on mobile for easier reading */
+  }
+}
+
+/* Large mobile / small tablet */
+@media (max-width: 640px) and (min-width: 481px) {
+  .faq-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .faq-button {
+    font-size: 1.1rem;
+  }
+  
+  .faq-accordion-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .faq-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .faq-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .faq-button {
+    font-size: 0.9rem;
+  }
+  
+  .faq-accordion-content p {
+    font-size: 0.8rem;
+  }
+}

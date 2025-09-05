@@ -1,0 +1,276 @@
+/* Base styles for mobile-first approach */
+
+body{
+width: 100vw;
+ 
+     background-color: #000000; /* a deep gray */
+  color: #e5e5e5; /* off-white */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: "Host Grotesk", sans-serif;
+}
+
+.about-container {
+    width: 100%;
+  text-align: justify;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Host Grotesk", sans-serif;
+    /* Prevent horizontal scroll */
+}
+
+.TEDxAbout-container {
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.TEDxAbout-container h1 {
+    font-size: 2.5rem; /* 40px */
+    font-family: "Host Grotesk", sans-serif;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.TEDxAbout-container p {
+    font-size: 1.125rem; /* 18px */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.TEDxSvitAbout-container {
+    position: relative;
+    z-index: 2;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.TEDxSvitAbout-container h1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.5rem; /* 40px */
+    width: 100%;
+    display: flex;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.TEDxSvitAbout-container p {
+    font-size: 1.125rem; /* 18px */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.aboutMandala {
+    position: absolute;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none; /* Prevent interference with content */
+    animation: mandalaAbout 200s linear infinite forwards;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .TEDxAbout-container {
+        margin-top: 9rem;
+        padding: 4rem 3rem 4rem 3rem;
+    }
+    
+    .TEDxAbout-container h1 {
+        font-size: 3rem; /* 48px */
+    }
+    
+    .TEDxAbout-container p {
+        font-size: 1.25rem; /* 20px */
+    }
+    
+    .TEDxSvitAbout-container {
+        padding: 0 3rem;
+        margin-bottom: 12rem;
+    }
+    
+    .TEDxSvitAbout-container h1 {
+        font-size: 3rem; /* 48px */
+    }
+    
+    .TEDxSvitAbout-container p {
+        font-size: 1.25rem; /* 20px */
+    }
+    
+    .aboutMandala {
+        padding: 3rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .TEDxAbout-container {
+        margin-top: 10rem;
+        padding: 5rem 6rem 5rem 6rem;
+    }
+    
+    .TEDxAbout-container h1 {
+        font-size: 3.375rem; /* 54px */
+    }
+    
+    .TEDxAbout-container p {
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .TEDxSvitAbout-container {
+        padding: 0 6rem;
+        margin-bottom: 15rem;
+    }
+    
+    .TEDxSvitAbout-container h1 {
+        font-size: 3.375rem; /* 54px */
+    }
+    
+    .TEDxSvitAbout-container p {
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .aboutMandala {
+        padding: 4rem;
+    }
+}
+
+/* Large desktop styles */
+@media (min-width: 1440px) {
+    .TEDxAbout-container {
+        padding: 5rem 10rem 5rem 10rem;
+    }
+    
+    .TEDxSvitAbout-container {
+        padding: 0 10rem;
+        margin-bottom: 20rem;
+    }
+    
+    .aboutMandala {
+        padding: 5rem;
+    }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1920px) {
+    .TEDxAbout-container {
+        padding: 5rem 15rem 5rem 15rem;
+    }
+    
+    .TEDxSvitAbout-container {
+        padding: 0 15rem;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .TEDxAbout-container {
+        margin-top: 2rem;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    .TEDxAbout-container h1 {
+        font-size: 2rem; /* 32px */
+    }
+    
+    .TEDxAbout-container p {
+        font-size: 1rem; /* 16px */
+        text-align: left; /* Better readability on small screens */
+    }
+    
+    .TEDxSvitAbout-container {
+        padding: 0 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    .TEDxSvitAbout-container h1 {
+        font-size: 2rem; /* 32px */
+    }
+    
+    .TEDxSvitAbout-container p {
+        font-size: 1rem; /* 16px */
+        text-align: left; /* Better readability on small screens */
+    }
+    
+    .aboutMandala {
+        padding: 1rem;
+    }
+}
+
+/* Animation remains the same */
+@keyframes mandalaAbout {
+    0% {
+        transform: rotate(0deg);
+        opacity: 30%;
+    }
+    10% {
+        transform: rotate(36deg);
+        opacity: 100%;
+    }
+    20% {
+        transform: rotate(72deg);
+        opacity: 30%;
+    }
+    30% {
+        transform: rotate(108deg);
+        opacity: 100%;
+    }
+    40% {
+        transform: rotate(144deg);
+        opacity: 30%;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 100%;
+    }
+    60% {
+        transform: rotate(216deg);
+        opacity: 30%;
+    }
+    70% {
+        transform: rotate(252deg);
+        opacity: 100%;
+    }
+    80% {
+        transform: rotate(288deg);
+        opacity: 30%;
+    }
+    90% {
+        transform: rotate(324deg);
+        opacity: 100%;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 30%;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .aboutMandala {
+        animation: none;
+        opacity: 50%;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .aboutMandala {
+        opacity: 20%;
+    }
+}

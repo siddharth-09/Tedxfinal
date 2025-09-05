@@ -1,0 +1,107 @@
+/* Footer.css */
+
+.footer-grid {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px 0 0 0;
+  font-family: 'Inter', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-col1,
+.footer-col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col1 a,
+.footer-col2 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.footer-col1 a:hover,
+.footer-col2 a:hover {
+  color: #ec2227;
+}
+/* Footer.css */
+
+/* ...your existing styles above... */
+
+.footer-bottom {
+  max-width: 80%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer-bottom img{
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop row for license + icons */
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:40%;   /* Adjust gap for spacing between license and icons */
+  width: 100%;
+}
+.license {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 0;   /* Remove margin for alignment in row */
+}
+.social-icons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 0;   /* Remove margin for alignment in row */
+}
+
+/* Responsive Styles - Stacked for mobile */
+@media (max-width: 600px) {
+  .social-icons{
+    font-size: 12px;
+  }
+  .footer-nav {
+    margin: 0;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    /* padding: 0 16px; */
+  }
+  .footer-bottom {
+    /* padding: 0 16px 24px 16px; */
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+  .footerImage {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .footer-col1,
+  .footer-col2 {
+    gap: 12px;
+  }
+}

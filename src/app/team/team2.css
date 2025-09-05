@@ -1,0 +1,39 @@
+.slider {
+  width: 100%;
+  border: 1px solid red;
+  height: 720px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .list {
+  display: flex;
+  height: 720px;
+  animation: autoRun 20s linear infinite;
+  gap: 20px; /* <-- add space between cards */
+}
+.slider .list .item {
+  flex: 0 0 auto;  /* don’t shrink */
+  width: 540px;
+  height: 720px;
+}
+.slider:hover .list {
+  animation-play-state: paused;
+}
+
+
+.TeamCardImgs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* move 1 full set (540px × 10 = 5400px), then immediately repeat */
+@keyframes autoRun {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5600px);
+  }
+}

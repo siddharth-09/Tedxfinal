@@ -1,0 +1,409 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainpage {
+  width: 100%;
+  overflow: hidden;
+   font-family: "Host Grotesk", sans-serif;
+}
+
+.NavBar {
+  margin-left: 20%;
+  position: absolute;
+  z-index: 100;
+  padding-top: 2%;
+  width: 60%;
+  height: 15%;
+}
+
+/* Remove all hamburger and mobile nav styles from here since they're in the popup component */
+
+.glassNavbarContainer {
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 2rem;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  height: 3rem;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+  text-decoration: underline;
+}
+.nav-links button{
+  background-color: transparent;
+}
+
+.get-tickets .tickets-button {
+  font-size: 1rem;
+  position: relative;
+  right: 2rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.get-tickets .tickets-button:hover {
+  background-color: #c10710;
+}
+
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroMandala {
+  width: 100vw;
+  height: 160vh;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: mandalaHero 150s linear infinite forwards;
+}
+.heroInnerMandala{
+  width: 50vw;
+  height: 80vh;
+  transform: translate(-50%, -50%) scale(1.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: mandalaInnerHero 600s linear infinite forwards;
+}
+@keyframes mandalaInnerHero {
+  0% {
+    transform: translate(-50%, -50%) scale(1.3) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.3) rotate(-360deg);
+  }
+}
+
+@keyframes mandalaHero {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.logoTextButtonContainer {
+  aspect-ratio: 1/1;
+  height: 10%;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoText{
+  transform: translateY(20%) scale(1.4);
+}
+
+.addressText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  font-size: 1.4rem;
+}
+
+.addressText p {
+  margin: .5rem;
+}
+
+.getTicketBtn button {
+  margin-top: 3rem;
+  background-color: red;
+  padding: .5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 4px solid red;
+  
+}
+
+.getTicketBtn button:hover {
+
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 0 0 100px rgba(235, 0, 40,.75);
+  transition: all 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+.samatavamMeaning {
+  left: 50%;
+  position: relative;
+  width: 70%;
+  font-size: 1.5rem;
+  margin: .3rem;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Small phones - 320px to 480px */
+@media (max-width: 480px) {
+  .NavBar {
+    margin-left: 0%;
+    width: 100vw;
+    padding-top: 2%;
+    height: auto;
+    min-height: 10rem;
+  }
+  
+  .logo {
+    padding-left: 1rem;
+  }
+  
+  .logo img {
+    height: 2.5rem;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .heroMandala {
+    width: 250vw;
+    height: auto;
+  }
+  .heroInnerMandala{
+  width: 50vw;
+  height: 80vh;
+  transform: translate(-50%, -50%) scale(1.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    animation: mandalaInnerHero 200s linear infinite forwards;
+}
+@keyframes mandalaInnerHero {
+  0% {
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3) rotate(-360deg);
+  }
+}
+  .logoText {
+    transform: translateY(20%) scale(.85);
+  }
+  
+  .addressText {
+    font-size: 0.9rem;
+  }
+  
+  .samatavamMeaning {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .glassNavbarContainer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 28px !important;
+  }
+}
+
+/* Large phones - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .NavBar {
+    margin-left: 0%;
+    width: 100vw;
+    height: auto;
+    min-height: 9rem;
+    padding-top: 1.5%;
+  }
+  
+  .logo img {
+    height: 2.8rem;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .heroMandala {
+    width: 220vw;
+    height: auto;
+  }
+  
+  .logoText {
+    transform: translateY(10%) scale(0.7);
+  }
+  
+  .addressText {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .NavBar {
+    margin-left: 10%;
+    width: 80%;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+  
+  .get-tickets .tickets-button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+    right: 1rem;
+  }
+  
+  .logo {
+    padding-left: 1.5rem;
+  }
+  
+  .addressText {
+    font-size: 1.2rem;
+  }
+  
+  .samatavamMeaning {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small laptops - 1025px to 1366px */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .NavBar {
+    margin-left: 15%;
+    width: 70%;
+  }
+  
+  .nav-links a {
+    font-size: 1.4rem;
+  }
+  
+  .addressText {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large screens - 1367px and above */
+@media (min-width: 1367px) {
+  .NavBar {
+    margin-left: 20%;
+    width: 60%;
+  }
+  
+  .nav-links {
+    gap: 2.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+  
+  .get-tickets .tickets-button {
+    font-size: 1.1rem;
+    padding: 1.2rem 1.8rem;
+  }
+  
+  .addressText {
+    font-size: 1.5rem;
+  }
+  
+  .samatavamMeaning {
+    font-size: 1.6rem;
+  }
+}
+
+/* Ultra-wide screens - 1920px and above */
+@media (min-width: 1920px) {
+  .nav-links {
+    gap: 3rem;
+  }
+  
+  .nav-links a {
+    font-size: 1.7rem;
+  }
+  
+  .addressText {
+    font-size: 1.6rem;
+  }
+}
+
+/* Height-based responsive adjustments */
+@media (max-height: 600px) {
+  .NavBar {
+    height: auto;
+    min-height: 6rem;
+    padding-top: 1%;
+  }
+  
+  .logoTextButtonContainer {
+    height: 50%;
+  }
+  
+  .logoText {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-height: 900px) {
+  .logoTextButtonContainer {
+    height: 65%;
+  }
+}   
