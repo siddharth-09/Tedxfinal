@@ -27,10 +27,11 @@ const Footer = () => {
              *This independent TEDx event is operated under license from TED.
             </p>
             <div className="social-icons">
-             <a href="#">FaYoutube </a>
-             <a href="#">FaLinkedin </a>
-             <a href="#">FaXTwitter </a>
-             <a href="#">FaInstagram </a>
+              <a href="#"><Image src="/SocialIcon/YoutubeIcon.svg" alt="YoutubeIcon" width={10} height={10}  style={{width:'20%',height:'auto', padding:'0',margin:'0',position:"relative",left:'50%',transform:"translateX(-50%)"}} /></a>
+              <a href="#"><Image src="/SocialIcon/LinkdinIcon.svg" alt="LinkdinIcon" width={10} height={10}  style={{width:'20%',height:'auto', padding:'0',margin:'0',position:"relative",left:'50%',transform:"translateX(-50%)"}} /></a>
+             <a href="#"><Image src="/SocialIcon/InstaIcon.svg" alt="Insta" width={10} height={10}  style={{width:'20%',height:'auto', padding:'0',margin:'0',position:"relative",left:'50%',transform:"translateX(-50%)"}} /></a>
+        
+
             </div>
            </div>
            <div className="footerImage">
