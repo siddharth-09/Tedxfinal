@@ -28,6 +28,28 @@ type MemberGroup = {
   // Other teams data
   const otherTeamsData: MemberGroup[] = [
     {
+      groupName:"Core Team",
+      members: [
+        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/' },
+      ],
+    },
+    {
+      groupName:"Website Team",
+      members: [
+        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Kirsh ', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Dhaval Patel', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/' },
+      ],
+    },
+    {
       groupName: 'Admin & Logistics',
       members: [
         { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },

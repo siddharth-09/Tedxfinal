@@ -173,7 +173,6 @@ export default function TeamGallery({ title, members }: TeamGalleryProps) {
               />
               <div className="image-text">
                 <h3>{member.name}</h3>
-                <p>{member.role ? `${member.role} | ` : ''}{member.department || ''}</p>
               </div>
             </div>
           ))}
