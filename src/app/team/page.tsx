@@ -115,10 +115,6 @@ type MemberGroup = {
           />
         <h1>Meet the team behind this event</h1>
       </div>
-
-      
-
-
         <div className='photesSection'>
 
           {otherTeamsData.map(group => (

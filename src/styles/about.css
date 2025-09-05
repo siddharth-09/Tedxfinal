@@ -1,7 +1,8 @@
 /* Base styles for mobile-first approach */
 
 body{
-width: 100vw;
+    border:4px solid red;
+    max-width: 100% !important;
  
      background-color: #000000; /* a deep gray */
   color: #e5e5e5; /* off-white */
@@ -10,9 +11,34 @@ width: 100vw;
   margin: 0;
   padding: 0;
   font-family: "Host Grotesk", sans-serif;
+
+  overflow-x: hidden;
+}
+html, body {
+  width: 100vw;           /* restrict total width to viewport width */
+  max-width: 100vw;
+  overflow-x: hidden;     /* hide horizontal scroll */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* include padding and border within width */
+}
+
+body {
+  border: 4px solid red;  /* your visible border */
+  box-sizing: border-box; /* include border in width */
+}
+.TeamMandalaContainer{
+       overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    border: 4px solid yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .about-container {
+    padding-top: 4rem;
     width: 100%;
   text-align: justify;
     background-color: black;
@@ -27,7 +53,7 @@ width: 100vw;
     position: relative;
     z-index: 2;
     margin-top: 1rem;
-    padding: 3rem 1.5rem 3rem 1.5rem;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,19 +93,21 @@ width: 100vw;
 }
 
 .TEDxSvitAbout-container p {
+    overflow-x: hidden;
     font-size: 1.125rem; /* 18px */
     text-align: justify;
     line-height: 1.6;
 }
 
 .aboutMandala {
-    position: absolute;
-    padding: 2rem;
+ 
+
+    margin-top: 4rem;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    object-fit: cover;
+
     pointer-events: none; /* Prevent interference with content */
     animation: mandalaAbout 200s linear infinite forwards;
 }
@@ -208,55 +236,21 @@ width: 100vw;
     }
     
     .aboutMandala {
-        padding: 1rem;
+      
+            margin-top: 0rem;
+
     }
 }
 
 /* Animation remains the same */
 @keyframes mandalaAbout {
     0% {
-        transform: rotate(0deg);
-        opacity: 30%;
-    }
-    10% {
-        transform: rotate(36deg);
-        opacity: 100%;
-    }
-    20% {
-        transform: rotate(72deg);
-        opacity: 30%;
-    }
-    30% {
-        transform: rotate(108deg);
-        opacity: 100%;
-    }
-    40% {
-        transform: rotate(144deg);
-        opacity: 30%;
-    }
-    50% {
-        transform: rotate(180deg);
-        opacity: 100%;
-    }
-    60% {
-        transform: rotate(216deg);
-        opacity: 30%;
-    }
-    70% {
-        transform: rotate(252deg);
-        opacity: 100%;
-    }
-    80% {
-        transform: rotate(288deg);
-        opacity: 30%;
-    }
-    90% {
-        transform: rotate(324deg);
-        opacity: 100%;
+        transform: rotate(0deg) scale(2);
+        opacity: 50%;
     }
     100% {
-        transform: rotate(360deg);
-        opacity: 30%;
+        transform: rotate(360deg) scale(2);
+        opacity: 50%;
     }
 }
 

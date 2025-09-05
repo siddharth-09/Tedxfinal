@@ -37,7 +37,18 @@ TEDx events blend live speakers, performers, and thought-provoking videos that s
                 </div>
                 <Footer />
             </div>
-           <img src="/aboutMandala.svg" alt="" className="aboutMandala"/>
+            <div className="TeamMandalaContainer">
+                     <Image
+                      src="/aboutMandala.svg"
+                      width={1920}
+                      height={1080}
+                      alt="Picture of the author"
+                      className="aboutMandala"
+                      />
+            </div>
+            
+
+           {/* <img src="/aboutMandala.svg" alt="" className="aboutMandala"/> */}
             </div>
         </>
     )
