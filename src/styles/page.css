@@ -40,6 +40,12 @@ body {
   margin-left: 5rem;
   margin-right: 5rem;
 }
+@media (max-width:480px) {
+  .DiscriptionPara{
+  margin: 2rem;
+
+}
+}
 .logo {
   padding-left: 2rem;
   position: relative;
