@@ -114,7 +114,7 @@ type MemberGroup = {
         { name: 'Nisarg Vimalkumar Rana', role: 'TY', department: 'Aeronautical', imageUrl: '/Music/Nisarg Rana.jpg' },
         { name: 'Manan Sutariya', role: 'TY', department: 'IT', imageUrl: '/Music/Manan Sutariya.jpg' },
         { name: 'Mahek Doshi', role: 'SY', department: 'CE', imageUrl: '/Music/Mahek Doshi.jpg' },
-        { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva Shah.png' },
+        { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva.jpeg' },
         { name: 'Harshil Dharmik', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
         { name: 'Yug Kalpesh Patel', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Yug Patel.jpeg' },
         { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita Gandhi.pdf' },
