@@ -32,7 +32,7 @@ type MemberGroup = {
       members: [
         { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
         { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
       ],
     },
@@ -41,7 +41,7 @@ type MemberGroup = {
       members: [
         { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
         { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
         { name: 'Kirsh Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
         { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
@@ -52,7 +52,7 @@ type MemberGroup = {
     {
       groupName: 'Admin & Logistics',
       members: [
-        { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/AadiJoshi.jpeg' },
         { name: 'Miraj Mistry', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
         { name: 'Mishit Shah', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
         { name: 'Netra Rakeshkumar Patel', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Netra Patel.jpg' },
@@ -94,7 +94,7 @@ type MemberGroup = {
       groupName: 'Anchoring',
       members: [
         { name: 'Anjali Panchal', role: 'FY', department: 'CSD', imageUrl: '/Anchoring/Anjali Panchal.jpg' },
-        { name: 'Devanshi Chaudhary', role: 'FY', department: 'IT', imageUrl: '/Anchoring/Devanshi Chaudhary.jpg' },
+        { name: 'Devanshi Chaudhary', role: 'FY', department: 'IT', imageUrl: '/Anchoring/Devanshi.jpeg' },
         { name: 'Shrey Shah', role: 'FY', department: 'IT', imageUrl: '/Anchoring/shrey pic.png' },
       ],
     },

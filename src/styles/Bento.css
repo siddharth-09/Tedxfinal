@@ -1,0 +1,349 @@
+/* Container that creates the scroll hijack zone */
+.bento-container {
+  position: relative;
+  width: 100%;
+  height: 300vh; /* 3x viewport height to give enough scroll space */
+}
+
+.bento-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.bento-wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Fixed height for the actual bento grid */
+  overflow: hidden; /* Hide both scrollbars for clean drag experience */
+}
+
+/* Responsive height adjustments */
+@media (max-height: 600px) {
+  .bento-wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-height: 400px) {
+  .bento-wrapper {
+    height: 300px;
+  }
+}
+
+/* New scrollable container for drag functionality */
+.bento-scrollable {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  
+  /* Hide scrollbar (cross-browser) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  
+  /* Smooth scrolling when not dragging */
+  scroll-behavior: smooth;
+}
+
+.bento-scrollable::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Active dragging state */
+.bento-scrollable.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto; /* Disable smooth scrolling during drag */
+}
+
+.FogContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allow mouse events to pass through fog */
+}
+
+.Fog {
+  position: sticky;
+  z-index: 2;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), black);
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allow mouse events to pass through fog */
+}
+
+/* Base bento grid - Desktop (1920px+) */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 640px) 1280px;
+  grid-template-rows: 380px 380px;
+  gap: 24px;
+  width: 6000px;
+  height: 800px;
+  background: #000000;
+  
+  /* Smooth hardware acceleration */
+  -webkit-overflow-scrolling: touch;
+  will-change: transform; /* Optimize for animations */
+}
+
+/* Large Desktop (1440px-1919px) */
+@media (max-width: 1919px) and (min-width: 1440px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 480px) 960px;
+    grid-template-rows: 285px 285px;
+    width: 4500px;
+    height: 600px;
+    gap: 18px;
+  }
+  
+  .bento-wrapper {
+    height: 600px;
+  }
+}
+
+/* Standard Desktop (1200px-1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 400px) 800px;
+    grid-template-rows: 237px 237px;
+    width: 3800px;
+    height: 500px;
+    gap: 16px;
+  }
+  
+  .bento-wrapper {
+    height: 500px;
+  }
+}
+
+/* Medium Desktop/Laptop (992px-1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 320px) 640px;
+    grid-template-rows: 190px 190px;
+    width: 3040px;
+    height: 400px;
+    gap: 14px;
+  }
+  
+  .bento-wrapper {
+    height: 400px;
+  }
+}
+
+/* Small Laptop (768px-991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 260px) 520px;
+    grid-template-rows: 154px 154px;
+    width: 2480px;
+    height: 320px;
+    gap: 12px;
+  }
+  
+  .bento-wrapper {
+    height: 320px;
+  }
+  
+  .FogContainer {
+    width: 2480px;
+  }
+}
+
+/* Tablet Portrait (600px-767px) - Keep all images, just smaller */
+@media (max-width: 767px) and (min-width: 600px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 200px) 400px;
+    grid-template-rows: 118px 118px;
+    width: 1800px;
+    height: 246px;
+    gap: 8px;
+  }
+  
+  .bento-wrapper {
+    height: 246px;
+  }
+  
+  .FogContainer {
+    width: 1800px;
+  }
+}
+
+/* Large Mobile (480px-599px) - Keep all images */
+@media (max-width: 599px) and (min-width: 480px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 160px) 320px;
+    grid-template-rows: 95px 95px;
+    width: 1440px;
+    height: 198px;
+    gap: 6px;
+  }
+  
+  .bento-wrapper {
+    height: 198px;
+  }
+  
+  .FogContainer {
+    width: 1440px;
+  }
+}
+
+/* Medium Mobile (380px-479px) - Keep all images */
+@media (max-width: 479px) and (min-width: 380px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 130px) 260px;
+    grid-template-rows: 77px 77px;
+    width: 1170px;
+    height: 160px;
+    gap: 4px;
+  }
+  
+  .bento-wrapper {
+    height: 160px;
+  }
+  
+  .FogContainer {
+    width: 1170px;
+  }
+}
+
+/* Small Mobile (320px-379px) - Keep all images */
+@media (max-width: 379px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 110px) 220px;
+    grid-template-rows: 65px 65px;
+    width: 990px;
+    height: 134px;
+    gap: 3px;
+  }
+  
+  .bento-wrapper {
+    height: 134px;
+  }
+  
+  .FogContainer {
+    width: 990px;
+  }
+}
+
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+  
+  /* Prevent text selection during drag */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Responsive border radius */
+@media (max-width: 767px) {
+  .bento-card {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .bento-card {
+    border-radius: 8px;
+  }
+}
+
+.bento-card img,
+.bento-card {
+  border-radius: inherit;
+}
+
+/* Hover effects - only when not dragging and not on touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .bento-scrollable:not(.dragging) .bento-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+}
+
+/* Disable pointer events on images to prevent interference with drag */
+.bento-card img {
+  pointer-events: none;
+}
+
+/* Legacy drag states - keeping for backward compatibility */
+.bento-card.dragging {
+  opacity: 0.3;
+  transform: scale(0.95);
+  z-index: 10;
+}
+
+.bento-card.drag-over {
+  border: 3px solid #007acc;
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.3);
+  transform: scale(1.02);
+}
+
+/* Drag preview styling */
+.drag-preview {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: none;
+}
+
+.drag-preview .bento-card {
+  box-shadow: none;
+  border-radius: 16px;
+}
+
+/* Placement for columns and rows */
+.col-1.row-1 { grid-column: 1; grid-row: 1; }
+.col-1.row-2 { grid-column: 1; grid-row: 2; }
+.col-2.row-1 { grid-column: 2; grid-row: 1; }
+.col-2.row-2 { grid-column: 2; grid-row: 2; }
+.col-3.row-1-2 { grid-column: 3; grid-row: 1 / span 2; }
+.col-4.row-1 { grid-column: 4; grid-row: 1; }
+.col-4.row-2 { grid-column: 4; grid-row: 2; }
+.col-5.row-1 { grid-column: 5; grid-row: 1; }
+.col-5.row-2 { grid-column: 5; grid-row: 2; }
+.col-6.row-1 { grid-column: 6; grid-row: 1; }
+.col-6.row-2 { grid-column: 6; grid-row: 2; }
+.col-7.row-1 { grid-column: 7; grid-row: 1; }
+.col-7.row-2 { grid-column: 7; grid-row: 2; }
+.col-8.row-1-2 { grid-column: 8; grid-row: 1 / span 2; }
+
+/* Touch-specific adjustments */
+@media (hover: none) and (pointer: coarse) {
+  .bento-scrollable {
+    cursor: default;
+  }
+  
+  .bento-card {
+    cursor: default;
+  }
+  
+  /* Enhanced touch scrolling on mobile */
+  .bento-scrollable {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Adjust drag sensitivity for touch */
+  .bento-card.dragging {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  
+  .bento-card.drag-over {
+    background-color: rgba(0, 122, 204, 0.1);
+    border: 2px solid #007acc;
+  }
+}
