@@ -31,7 +31,7 @@ type MemberGroup = {
       groupName:"Core Team",
       members: [
         { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/aditi.jpeg' },
         { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
       ],
@@ -39,10 +39,10 @@ type MemberGroup = {
     {
       groupName:"Website Team",
       members: [
-        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
-        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
+        // { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        // { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        // { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
+        // { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
         { name: 'Kirsh Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
         { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
         { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul.jpeg' },
@@ -144,6 +144,7 @@ type MemberGroup = {
               key={group.groupName}
               title={group.groupName}
               members={group.members}
+              
             />
           ))}
         </div>
