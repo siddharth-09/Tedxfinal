@@ -76,16 +76,21 @@ export default function Home() {
       </div>
       {/* ------------------------Samtavam Meaning Text-------------------------- */}
       <div className="samatavamMeaning">
-        <ScrollReveal
+        {/* <ScrollReveal
           baseOpacity={0}
           enableBlur={true}
           baseRotation={10}
           blurStrength={10}
-        >
+        > */}
+        <p className="DiscriptionPara">
           Samatvam means equanimity a balanced state of mind that remains calm,
           undisturbed, and impartial in success and failure, pleasure and pain,
           gain and loss.
-        </ScrollReveal>
+        </p>
+          {/* Samatvam means equanimity a balanced state of mind that remains calm,
+          undisturbed, and impartial in success and failure, pleasure and pain,
+          gain and loss. */}
+        {/* </ScrollReveal> */}
 
       
       </div>

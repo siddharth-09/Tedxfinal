@@ -35,7 +35,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.DiscriptionPara{
+  margin: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 .logo {
   padding-left: 2rem;
   position: relative;
