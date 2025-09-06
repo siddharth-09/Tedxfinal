@@ -42,11 +42,11 @@ type MemberGroup = {
         { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
         { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
         { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/CoreAndWeb/Dhyani.png' },
+        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
         { name: 'Kirsh Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
-        { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
+        { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
         { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul.jpeg' },
-        { name: 'Dhaval Patel', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/' },
+        { name: 'Dhaval Patel', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhaval.jpeg' },
       ],
     },
     {
@@ -55,7 +55,8 @@ type MemberGroup = {
         { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
         { name: 'Miraj Mistry', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
         { name: 'Mishit Shah', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
-        { name: 'Netra Patel', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Netra Patel.jpg' },
+        { name: 'Netra Rakeshkumar Patel', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Netra Patel.jpg' },
+        { name: 'Sriram Swaminathan', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Sriram Swaminathan.jpg' },
       ],
     },
     {
@@ -84,7 +85,7 @@ type MemberGroup = {
     {
       groupName: 'Social Media',
       members: [
-        { name: 'Krish Patel', role: 'SY', department: 'CE', imageUrl: '/SocialMedia/' },
+        { name: 'Krish Patel', role: 'SY', department: 'CE', imageUrl: '/SocialMedia/Krish Patel.jpeg' },
         { name: 'Malek Noor', role: 'TY', department: 'IT', imageUrl: '/SocialMedia/Malek Noor.jpeg' },
         { name: 'Rajat Haathi', role: 'SY', department: 'CE', imageUrl: '/SocialMedia/Rajat Haathi.jpg' },
       ],
@@ -109,16 +110,15 @@ type MemberGroup = {
       groupName: 'Music',
       members: [
         { name: 'Meet Barot', role: 'LY', department: 'IT', imageUrl: '/Music/Meet Barot.jpg' },
-        { name: 'Ishmael Tinodiwanshaie Ruzungunde', role: 'SY', department: 'Aeronautical', imageUrl: '/Music/Ishmael Tynoe.jpeg' },
+        { name: 'Ishmael Tinodiwanaishe Ruzungunde', role: 'SY', department: 'Aeronautical', imageUrl: '/Music/Ishmael Tynoe.jpeg' },
         { name: 'Nisarg Vimalkumar Rana', role: 'TY', department: 'Aeronautical', imageUrl: '/Music/Nisarg Rana.jpg' },
         { name: 'Manan Sutariya', role: 'TY', department: 'IT', imageUrl: '/Music/Manan Sutariya.jpg' },
         { name: 'Mahek Doshi', role: 'SY', department: 'CE', imageUrl: '/Music/Mahek Doshi.jpg' },
         { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva Shah.png' },
-        { name: 'Harshil Sharma', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
+        { name: 'Harshil Dharmik Sharma', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
         { name: 'Yug Kalpesh Patel', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Yug Patel.jpeg' },
-        { name: 'Salaita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita Gandhi.pdf' },
+        { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita Gandhi.pdf' },
         { name: 'Shubhamkumar Harshadkumar Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Shubham Panchal.JPG' },
-        { name: 'Harshadkumar Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshadkumar Panchal.jpg' },
       ],
     },
   ];
