@@ -50,7 +50,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Admin & Logistics',
+      groupName: 'Admin & Logistics Team',
       members: [
         { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/AadiJoshi.jpeg' },
         { name: 'Miraj Mistry', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
@@ -60,7 +60,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Graphic Design',
+      groupName: 'Graphic Design Team',
       members: [
         { name: 'Chaitanya Giri', role: 'TY', department: 'CSD', imageUrl: '/GraphicDesignImages/' },
         { name: 'Meher Rathod', role: 'SY', department: 'CSD', imageUrl: '/GraphicDesignImages/Meher Rathod.jpg' },
@@ -68,14 +68,14 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Videography',
+      groupName: 'Videography Team',
       members: [
         { name: 'Akshita Vimawala', role: 'TY', department: 'Aeronautical', imageUrl: '/VideographyImages/Akshita.jpeg' },
         { name: 'Vyom Patel', role: 'SY', department: 'Civil', imageUrl: '/VideographyImages/Vyom Patel.jpeg' },
       ],
     },
     {
-      groupName: 'Video Editing',
+      groupName: 'Video Editing Team',
       members: [
         { name: 'Deep Patoriya', role: 'TY', department: 'CE', imageUrl: '/VideoEditing/Deep Patoriya.jpg' },
         { name: 'Parth Soni', role: 'TY', department: 'CE', imageUrl: '/VideoEditing/Parth Soni.jpeg' },
@@ -83,7 +83,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Social Media',
+      groupName: 'Social Media Team',
       members: [
         { name: 'Krish Patel', role: 'SY', department: 'CE', imageUrl: '/SocialMedia/Krish Patel.jpeg' },
         { name: 'Malek Noor', role: 'TY', department: 'IT', imageUrl: '/SocialMedia/Malek Noor.jpeg' },
@@ -91,7 +91,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Anchoring',
+      groupName: 'Anchoring Team',
       members: [
         { name: 'Anjali Panchal', role: 'FY', department: 'CSD', imageUrl: '/Anchoring/Anjali Panchal.jpg' },
         { name: 'Devanshi Chaudhary', role: 'FY', department: 'IT', imageUrl: '/Anchoring/Devanshi.jpeg' },
@@ -99,7 +99,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Dance',
+      groupName: 'Dance Team',
       members: [
         { name: 'Kavya Thakkar', role: 'SY', department: 'Aeronautical', imageUrl: '/Dance/Kavya Gaurav Thakkar.jpg' },
         { name: 'Kritika Panchal', role: 'SY', department: 'CE', imageUrl: '/Dance/Kritika Panchal.jpg' },
@@ -107,7 +107,7 @@ type MemberGroup = {
       ],
     },
     {
-      groupName: 'Music',
+      groupName: 'Music Team',
       members: [
         { name: 'Meet Barot', role: 'LY', department: 'IT', imageUrl: '/Music/Meet Barot.jpg' },
         { name: 'Ishmael Tinodiwanaishe Ruzungunde', role: 'SY', department: 'Aeronautical', imageUrl: '/Music/Ishmael Tynoe.jpeg' },
@@ -115,7 +115,7 @@ type MemberGroup = {
         { name: 'Manan Sutariya', role: 'TY', department: 'IT', imageUrl: '/Music/Manan Sutariya.jpg' },
         { name: 'Mahek Doshi', role: 'SY', department: 'CE', imageUrl: '/Music/Mahek Doshi.jpg' },
         { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva Shah.png' },
-        { name: 'Harshil Dharmik Sharma', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
+        { name: 'Harshil Dharmik', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
         { name: 'Yug Kalpesh Patel', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Yug Patel.jpeg' },
         { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita Gandhi.pdf' },
         { name: 'Shubhamkumar Harshadkumar Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Shubham Panchal.JPG' },

@@ -34,7 +34,7 @@ const FAQs = () => {
       answer: "Attending TEDxSVIT means joining a vibrant space for dialogue, creativity, and exploration. You'll hear inspiring talks, meet like-minded people, and leave with new ideas and perspectives that could change the way you think."
     },
     {
-      question: "What are TED talks?",
+      question: "What are TEDx talks?",
       answer: "TEDx Talks are independently organized presentations that follow the format and spirit of TED Talks, which are short, powerful talks on topics related to Technology, Entertainment, and Design - and beyond."
     },
     {

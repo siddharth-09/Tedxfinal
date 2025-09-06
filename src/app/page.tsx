@@ -63,8 +63,8 @@ export default function Home() {
             />
           </div>
           <div className="addressText">
-            <p>September 09, 2025 | 9.00 AM onwards</p>
-            <p>Architecture auditorium, SVIT Campus, Vasad</p>
+            <p>September 12, 2025</p>
+            <p>Architecture Auditorium, SVIT Campus, Vasad</p>
           </div>
           <div className="getTicketBtn">
             <Link href="/ticketForm">
@@ -83,7 +83,7 @@ export default function Home() {
           blurStrength={10}
         > */}
         <p className="DiscriptionPara">
-          Samatvam means equanimity a balanced state of mind that remains calm,
+          Samatvam means equanimity - a balanced state of mind that remains calm,
           undisturbed, and impartial in success and failure, pleasure and pain,
           gain and loss.
         </p>

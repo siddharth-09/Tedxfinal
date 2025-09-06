@@ -32,7 +32,7 @@ TEDx events blend live speakers, performers, and thought-provoking videos that s
                 </div>
                 
                 <div className="TEDxSvitAbout-container">
-                    <h1>About TEDxSvit</h1>
+                    <h1>About TEDxSVIT</h1>
                     <p>TEDxSVIT is an independently organized TEDx event hosted by Sardar Vallabhbhai Patel Institute of Technology (SVIT), Vasad, under the global TED initiative of &quot;Ideas Worth Spreading.&quot; It serves as a platform for bold thinkers, innovators, artists, and changemakers from diverse fields to share their stories, spark conversations, and inspire action within and beyond our campus community.
                     </p><br /><p> Launched in 2023, TEDxSVIT was founded by a visionary team of students: Shofiya Bootwala, Yesha Vyas, Harshil Bhatt, and Devanshi Patel - pioneers who laid the groundwork for what would become one of the most impactful platforms on campus.</p>
                     <br />

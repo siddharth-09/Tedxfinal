@@ -250,7 +250,7 @@ body {
   }
 }
   .logoText {
-    transform: translateY(20%) scale(.85);
+    transform: translateY(20%) scale(.75);
   }
   
   .addressText {
