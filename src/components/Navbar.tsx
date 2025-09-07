@@ -85,7 +85,7 @@ export default function Navbar() {
             <div className="nav-links desktop-nav">
               <a onClick={() => handleNavClick("/")}>Home</a>
               <a onClick={() => handleNavClick("/team")}>Team</a>
-              <a onClick={() => handleNavClick("/sponsors")}>Sponsors</a>
+              {/* <a onClick={() => handleNavClick("/sponsors")}>Sponsors</a> */}
               <a onClick={() => handleNavClick("/about")}>About</a>
             </div>
 
