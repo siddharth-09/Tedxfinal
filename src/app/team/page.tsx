@@ -43,7 +43,7 @@ type MemberGroup = {
         // { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
         // { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         // { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
-        { name: 'Kirsh Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
+        { name: 'Krish Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
         { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
         { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul.jpeg' },
         { name: 'Dhaval Patel', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhaval.jpeg' },

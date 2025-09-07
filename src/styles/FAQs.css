@@ -18,7 +18,7 @@
   padding-top: clamp(2rem, 4vw, 4rem);
   padding-bottom: clamp(2rem, 4vw, 4rem);
   width: 100%;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Host Grotesk', sans-serif;
   background: #000000;
   color: #ffffff;
   display: flex;
@@ -32,6 +32,7 @@
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: clamp(1rem, 3vw, 2rem);
   text-align: center;
+   font-family: 'Host Grotesk', sans-serif;
 }
 
 .faq-accordion {
@@ -81,6 +82,7 @@
 }
 
 .faq-accordion-title {
+   font-family: 'Host Grotesk', sans-serif;
   padding: clamp(0.5rem, 2vw, 1em) clamp(1rem, 3vw, 1.5em) clamp(0.5rem, 2vw, 1em) 0;
   line-height: 1.4;
 }
