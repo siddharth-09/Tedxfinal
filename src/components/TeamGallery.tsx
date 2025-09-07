@@ -5,6 +5,7 @@ type Member = {
   name: string;
   role?: string;
   department?: string;
+  designation?: string; // Added designation field
   imageUrl: string;
 };
 
@@ -173,6 +174,9 @@ export default function TeamGallery({ title, members }: TeamGalleryProps) {
               />
               <div className="image-text">
                 <h3>{member.name}</h3>
+                {member.designation && (
+                  <p className="designation">{member.designation}</p>
+                )}
               </div>
             </div>
           ))}

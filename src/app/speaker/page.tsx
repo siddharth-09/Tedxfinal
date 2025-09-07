@@ -2,7 +2,7 @@
 
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import './team.css'; // Make sure to place the CSS file in the same directory or adjust the path
+import './speaker.css'; // Make sure to place the CSS file in the same directory or adjust the path
 import Image from "next/image";
 import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
@@ -14,27 +14,26 @@ import MobileNavPopup from '@/components/MobilePopup';
 // Main HomePage component that combines all sections
 export default function HomePage() {
   type Member = {
-    name: string;
-    role: string;
-    department: string;
-    designation?: string; // Added optional designation field
-    imageUrl: string;
-  };
+  name: string;
+  role: string;
+  department: string;
+  imageUrl: string;
+};
 
-  type MemberGroup = {
-    groupName: string;
-    members: Member[];
-  };
+type MemberGroup = {
+  groupName: string;
+  members: Member[];
+};
 
   // Other teams data
   const otherTeamsData: MemberGroup[] = [
     {
       groupName:"Core Team",
       members: [
-        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', designation:'Organiser', imageUrl: '/CoreAndWeb/' },
-        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', designation:'Organiser', imageUrl: '/CoreAndWeb/Aditi.JPG' },
-        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Vipra.png' },
-        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Dhyani.png' },
+        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical',designation:'Organiser', imageUrl: '/CoreAndWeb/' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical',designation:'Organiser', imageUrl: '/CoreAndWeb/Aditi.JPG' },
+        { name: 'Vipra Dave', role: 'SY', department: 'Mechanical',designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Vipra.png' },
+        { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE',designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Dhyani.png' },
       ],
     },
     {

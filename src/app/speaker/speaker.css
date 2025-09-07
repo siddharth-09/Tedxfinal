@@ -156,27 +156,11 @@ body {
   text-align: left;
 }
 
-/* Specific styling for designation */
-.carousel-slide .image-text .designation {
-  font-size: 1.125rem; /* Larger than regular p text */
-  color: #f3f4f6; /* Slightly lighter color */
-  font-weight: 500; /* Medium weight */
-  margin: 0;
-  padding: 0 1rem 1rem 1rem;
-  text-align: left;
-  text-transform: uppercase; /* Optional: makes designation stand out */
-  letter-spacing: 0.05em; /* Optional: adds spacing between letters */
-}
-
 /* Responsive Design */
 @media (min-width: 640px) {
   .carousel-slide {
     width: 22.5rem;
     height: 30rem;
-  }
-  
-  .carousel-slide .image-text .designation {
-    font-size: 0.875rem; /* Adjust for smaller screens */
   }
 }
 
@@ -192,9 +176,5 @@ body {
   
   .HeroSectionContainer h1 {
     font-size: 6rem; /* Larger text for desktop */
-  }
-  
-  .carousel-slide .image-text .designation {
-    font-size: 1.25rem; /* Larger for desktop */
   }
 }
