@@ -38,7 +38,7 @@ const speakers = [
 
 // Main HomePage component that combines all sections
 export default function HomePage() {
-  const [openIdx, setOpenIdx] = useState(null);
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
     <>
