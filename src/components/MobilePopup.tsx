@@ -141,8 +141,8 @@ export default function MobileNavPopup() {
             <Link href="/team" onClick={closeMenu}>
               <span className="nav-item">Team</span>
             </Link>
-            <Link href="/sponsors" onClick={closeMenu}>
-              <span className="nav-item">Sponsors</span>
+            <Link href="/speaker" onClick={closeMenu}>
+              <span className="nav-item">Speakers</span>
             </Link>
             <Link href="/about" onClick={closeMenu}>
               <span className="nav-item">About</span>
