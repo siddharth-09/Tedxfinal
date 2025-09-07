@@ -160,7 +160,7 @@ body {
   transform: translateY(20%) scale(1.4);
 }
 
-.addressText {
+.addressText p{
   display: flex;
   flex-direction: column;
   justify-content: center;
