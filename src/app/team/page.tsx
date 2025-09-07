@@ -45,8 +45,10 @@ export default function HomePage() {
         // { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         // { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
         { name: 'Krish Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
-        { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
         { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul Desai.jpg' },
+        { name: 'Nitya Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nitya.jpeg' },
+        { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
+        
         { name: 'Dhaval Patel', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhaval.jpeg' },
       ],
     },
