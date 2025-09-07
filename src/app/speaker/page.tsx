@@ -6,7 +6,7 @@ import "./speaker.css";
 import Image from "next/image";
 import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
-import MasonryGallery from "@/components/Masonry";
+
 import TeamGallery from "@/components/TeamGallery";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
