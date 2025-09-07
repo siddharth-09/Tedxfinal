@@ -79,7 +79,7 @@
   pointer-events: none; /* Allow mouse events to pass through fog */
 }
 
-/* Base bento grid - Desktop (1920px+) */
+/* Base bento grid - Desktop (1920px+) - UNCHANGED */
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(7, 640px) 1280px;
@@ -94,7 +94,7 @@
   will-change: transform; /* Optimize for animations */
 }
 
-/* Large Desktop (1440px-1919px) */
+/* Large Desktop (1440px-1919px) - UNCHANGED */
 @media (max-width: 1919px) and (min-width: 1440px) {
   .bento-grid {
     grid-template-columns: repeat(7, 480px) 960px;
@@ -109,7 +109,7 @@
   }
 }
 
-/* Standard Desktop (1200px-1439px) */
+/* Standard Desktop (1200px-1439px) - UNCHANGED */
 @media (max-width: 1439px) and (min-width: 1200px) {
   .bento-grid {
     grid-template-columns: repeat(7, 400px) 800px;
@@ -124,7 +124,7 @@
   }
 }
 
-/* Medium Desktop/Laptop (992px-1199px) */
+/* Medium Desktop/Laptop (992px-1199px) - UNCHANGED */
 @media (max-width: 1199px) and (min-width: 992px) {
   .bento-grid {
     grid-template-columns: repeat(7, 320px) 640px;
@@ -139,98 +139,98 @@
   }
 }
 
-/* Small Laptop (768px-991px) */
+/* Small Laptop (768px-991px) - INCREASED 1.5x */
 @media (max-width: 991px) and (min-width: 768px) {
   .bento-grid {
-    grid-template-columns: repeat(7, 260px) 520px;
-    grid-template-rows: 154px 154px;
-    width: 2480px;
-    height: 320px;
+    grid-template-columns: repeat(7, 390px) 780px;
+    grid-template-rows: 231px 231px;
+    width: 3720px;
+    height: 480px;
+    gap: 18px;
+  }
+  
+  .bento-wrapper {
+    height: 480px;
+  }
+  
+  .FogContainer {
+    width: 3720px;
+  }
+}
+
+/* Tablet Portrait (600px-767px) - INCREASED 1.75x */
+@media (max-width: 767px) and (min-width: 600px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 350px) 700px;
+    grid-template-rows: 207px 207px;
+    width: 3150px;
+    height: 431px;
+    gap: 14px;
+  }
+  
+  .bento-wrapper {
+    height: 431px;
+  }
+  
+  .FogContainer {
+    width: 3150px;
+  }
+}
+
+/* Large Mobile (480px-599px) - INCREASED 2x */
+@media (max-width: 599px) and (min-width: 480px) {
+  .bento-grid {
+    grid-template-columns: repeat(7, 320px) 640px;
+    grid-template-rows: 190px 190px;
+    width: 2880px;
+    height: 396px;
     gap: 12px;
   }
   
   .bento-wrapper {
-    height: 320px;
+    height: 396px;
   }
   
   .FogContainer {
-    width: 2480px;
+    width: 2880px;
   }
 }
 
-/* Tablet Portrait (600px-767px) - Keep all images, just smaller */
-@media (max-width: 767px) and (min-width: 600px) {
+/* Medium Mobile (380px-479px) - INCREASED 2x */
+@media (max-width: 479px) and (min-width: 380px) {
   .bento-grid {
-    grid-template-columns: repeat(7, 200px) 400px;
-    grid-template-rows: 118px 118px;
-    width: 1800px;
-    height: 246px;
+    grid-template-columns: repeat(7, 260px) 520px;
+    grid-template-rows: 154px 154px;
+    width: 2340px;
+    height: 320px;
     gap: 8px;
   }
   
   .bento-wrapper {
-    height: 246px;
+    height: 320px;
   }
   
   .FogContainer {
-    width: 1800px;
+    width: 2340px;
   }
 }
 
-/* Large Mobile (480px-599px) - Keep all images */
-@media (max-width: 599px) and (min-width: 480px) {
+/* Small Mobile (320px-379px) - INCREASED 2x */
+@media (max-width: 379px) {
   .bento-grid {
-    grid-template-columns: repeat(7, 160px) 320px;
-    grid-template-rows: 95px 95px;
-    width: 1440px;
-    height: 198px;
+    grid-template-columns: repeat(7, 220px) 440px;
+    grid-template-rows: 130px 130px;
+    width: 1980px;
+    height: 268px;
     gap: 6px;
   }
   
   .bento-wrapper {
-    height: 198px;
+    height: 268px;
   }
   
   .FogContainer {
-    width: 1440px;
-  }
-}
-
-/* Medium Mobile (380px-479px) - Keep all images */
-@media (max-width: 479px) and (min-width: 380px) {
-  .bento-grid {
-    grid-template-columns: repeat(7, 130px) 260px;
-    grid-template-rows: 77px 77px;
-    width: 1170px;
-    height: 160px;
-    gap: 4px;
-  }
-  
-  .bento-wrapper {
-    height: 160px;
-  }
-  
-  .FogContainer {
-    width: 1170px;
-  }
-}
-
-/* Small Mobile (320px-379px) - Keep all images */
-@media (max-width: 379px) {
-  .bento-grid {
-    grid-template-columns: repeat(7, 110px) 220px;
-    grid-template-rows: 65px 65px;
-    width: 990px;
-    height: 134px;
-    gap: 3px;
-  }
-  
-  .bento-wrapper {
-    height: 134px;
-  }
-  
-  .FogContainer {
-    width: 990px;
+    width: 1980px;
   }
 }
 
