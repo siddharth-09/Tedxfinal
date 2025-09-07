@@ -11,7 +11,6 @@ const Footer = () => {
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Team</a>
-          <a href="#">Sponsors</a>
         </div>
         <div className="footer-col2">
           <a href="#">Get Tickets</a>
