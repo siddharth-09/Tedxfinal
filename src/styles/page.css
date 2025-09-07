@@ -159,6 +159,12 @@ body {
 .logoText{
   transform: translateY(20%) scale(1.4);
 }
+@media (min-width: 1250px) and (max-height: 600px) {
+  .logoText img{
+    transform: translateY(20%) scale(1.4);
+  }
+}
+
 
 .addressText p{
   display: flex;
