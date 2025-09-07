@@ -259,8 +259,8 @@ body {
     transform: translateY(20%) scale(.75);
   }
   
-  .addressText {
-    font-size: 0.9rem;
+  .addressText p{
+    font-size: 1rem;
   }
   
   .samatavamMeaning {

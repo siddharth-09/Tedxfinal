@@ -64,7 +64,7 @@ export default function Home() {
           </div>
           <div className="addressText">
             <p>September 12, 2025</p>
-            <p>Architecture Auditorium, SVIT Campus, Vasad</p>
+            <p>Architecture Auditorium SVIT Campus, Vasad</p>
           </div>
           <div className="getTicketBtn">
             <Link href="/ticketForm">
