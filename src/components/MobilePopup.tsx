@@ -51,8 +51,8 @@ export default function MobileNavPopup() {
               <Link href="/team">
                 <span className="nav-item">Team</span>
               </Link>
-              <Link href="/sponsors">
-                <span className="nav-item">Sponsors</span>
+              <Link href="/speaker">
+                <span className="nav-item">Speakers</span>
               </Link>
               <Link href="/about">
                 <span className="nav-item">About</span>

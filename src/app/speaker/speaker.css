@@ -178,3 +178,197 @@ body {
     font-size: 6rem; /* Larger text for desktop */
   }
 }
+
+.speaker-box {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  background: #171717;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.speaker-image {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  background: #181818;
+  overflow: hidden;
+  display: flex;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Desktop description */
+.speaker-desc {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: #222;
+  font-size: 1.4rem;
+  transition: max-height 0.3s linear, opacity 0.2s linear;
+  position: relative;
+  z-index: 2;
+}
+.speaker-desc h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.speaker-desc p {
+  color: #aaa;
+  font-size: 1.25rem;
+}
+@media (min-width: 700px){
+ .speaker-box {
+  border-radius: 30px;
+  margin: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 80vw;
+  height: 90vh;
+  background: #171717;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.speaker-image {
+
+  padding: 4rem;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 4 !important;
+  max-height: 800px;
+  position: relative;
+  cursor: pointer;
+  background: #181818;
+  overflow: hidden;
+  display: flex;
+} 
+.cover-image {
+  border-radius: 30px;
+  width: 100%;
+
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+}
+
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  .speaker-box {
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 16px;
+    position: relative;
+    background: transparent;
+  }
+  .speaker-image {
+    border-radius:30px;
+    width: 90vw;
+    /* 3:4 ratio using aspect-ratio or fallback */
+    aspect-ratio: 3 / 4;
+    height: auto;
+    min-height: 0;
+    cursor: pointer;
+    position: relative;
+    background: #111;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .speaker-name-mobile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 0.85rem 1.3rem;
+    background: linear-gradient(to top, rgba(20,20,20,0.95) 70%, rgba(0,0,0,0.6) 100%, transparent 110%);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 20px rgba(0,0,0,.25);
+    pointer-events: none;
+  }
+  /* Mobile overlay style for description */
+  .speaker-desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(0,0,0,0.94), rgba(0,0,0,0.68) 90%, transparent 100%);
+    color: #fff;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    padding: 0 1.3rem 2.6rem 1.3rem;
+    transition: opacity 0.35s, max-height 0.4s;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* Make sure h3,p look tidy on overlay */
+  }
+  .speaker-desc.show {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 320px;
+    padding: 2.6rem 1.3rem 3.2rem 1.3rem;
+  }
+  .speaker-desc h3 {
+    font-size: 1.25rem;
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 0;
+  }
+  .speaker-desc p {
+    color: #dadada;
+    font-size: 1.05rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+}
+.speaker-name-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .speaker-name-mobile {
+    display: block;
+  }
+}
