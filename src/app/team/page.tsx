@@ -31,7 +31,7 @@ type MemberGroup = {
       groupName:"Core Team",
       members: [
         { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/' },
-        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/aditi.jpeg' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Aditi.JPG' },
         { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
       ],
@@ -62,7 +62,7 @@ type MemberGroup = {
     {
       groupName: 'Graphic Design Team',
       members: [
-        { name: 'Chaitanya Giri', role: 'TY', department: 'CSD', imageUrl: '/GraphicDesignImages/' },
+        { name: 'Chaitanya Giri', role: 'TY', department: 'CSD', imageUrl: '/GraphicDesignImages/chaitanya.JPG' },
         { name: 'Meher Rathod', role: 'SY', department: 'CSD', imageUrl: '/GraphicDesignImages/Meher Rathod.jpg' },
         { name: 'Rudra Joshi', role: 'TY', department: 'IT', imageUrl: '/GraphicDesignImages/Rudra Joshi Ashutosh.jpg' },
       ],
