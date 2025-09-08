@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import { Host_Grotesk } from 'next/font/google';
 // import MobileNavPopup from "@/components/MobilePopup";
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 const hostGrotesk = Host_Grotesk({
@@ -14,8 +16,13 @@ const hostGrotesk = Host_Grotesk({
   variable: '--font-host-grotesk',
 });
 export const metadata: Metadata = {
-  title: "Your App",
-  description: "App with smooth scroll",
+  title: "TEDxSVIT",
+  description: "Official Website for TEDxSVIT",
+  icons: {
+    icon: "/favicon.ico", // Place favicon.ico in your public/ folder
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png", // Optional: for iOS
+  },
 };
 
 export default function RootLayout({

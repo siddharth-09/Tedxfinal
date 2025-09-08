@@ -31,8 +31,8 @@ export default function HomePage() {
     {
       groupName:"Core Team",
       members: [
-        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', designation:'Organiser', imageUrl: '/CoreAndWeb/' },
-        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', designation:'Organiser', imageUrl: '/CoreAndWeb/Aditi.JPG' },
+        { name: 'Kabir Brahmbhatt', role: 'TY', department: 'Mechanical', designation:'Organiser', imageUrl: '/CoreAndWeb/Kabir.jpg' },
+        { name: 'Aditi Patel', role: 'SY', department: 'Mechanical', designation:'Co-Organiser', imageUrl: '/CoreAndWeb/Aditi.JPG' },
         { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Vipra.png' },
         { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', designation:'Chief Coordinator', imageUrl: '/CoreAndWeb/Dhyani.png' },
       ],
@@ -45,7 +45,7 @@ export default function HomePage() {
         // { name: 'Vipra Dave', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Vipra.png' },
         // { name: 'Dhyani Upadhyay', role: 'TY', department: 'CE', imageUrl: '/CoreAndWeb/Dhyani.png' },
         { name: 'Krish Prajapati', role: 'TY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Krish.jpeg' },
-        { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul Desai.jpg' },
+        { name: 'Nakul Desai', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nakul2.jpg' },
         { name: 'Nitya Patel', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Nitya.jpeg' },
         { name: 'Siddharth Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/CoreAndWeb/Siddharth Panchal.jpeg' },
         
@@ -56,8 +56,8 @@ export default function HomePage() {
       groupName: 'Admin & Logistics Team',
       members: [
         { name: 'Aadi Joshi', role: 'TY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/AadiJoshi.jpeg' },
-        { name: 'Miraj Mistry', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
-        { name: 'Mishit Shah', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/' },
+        { name: 'Miraj Mistry', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/Miraj Mistry.jpg' },
+        { name: 'Mishit Shah', role: 'SY', department: 'Mechanical', imageUrl: '/AdminAndLogistics/Mishit2.JPG' },
         { name: 'Netra Rakeshkumar Patel', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Netra Patel.jpg' },
         { name: 'Sriram Swaminathan', role: 'TY', department: 'CE', imageUrl: '/AdminAndLogistics/Sriram Swaminathan.jpg' },
       ],
@@ -120,7 +120,7 @@ export default function HomePage() {
         { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva.jpeg' },
         { name: 'Harshil Dharmik', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
         { name: 'Yug Kalpesh Patel', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Yug Patel.jpeg' },
-        { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita' },
+        { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita.jpg' },
         { name: 'Shubhamkumar Harshadkumar Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Shubham Panchal.JPG' },
       ],
     },
