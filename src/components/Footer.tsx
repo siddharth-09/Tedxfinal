@@ -3,20 +3,21 @@
 import "../styles/Footer.css";
 // import TedXFooter from '../../public/TedXFooter.png'
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer-grid">
       <div className="footer-nav">
         <div className="footer-col1">
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
           <a href="/about">About</a>
           <a href="/team">Team</a>
           <a href="/speaker">Speaker</a>
         </div>
         <div className="footer-col2">
           <a href="/ticketForm">Get Tickets</a>
-          <a href="/#bento-wrapper">Gallery</a>
-          <a href="/#FAQ">FAQ</a>
+          <Link href="/#bento-wrapper">Gallery</Link>
+          <Link href="/#FAQ">FAQ</Link>
         </div>
       </div>
 
