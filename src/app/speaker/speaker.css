@@ -223,6 +223,7 @@ body {
   transition: max-height 0.3s linear, opacity 0.2s linear;
   position: relative;
   z-index: 2;
+
 }
 .speaker-desc h3 {
   font-size: 3rem;
@@ -342,7 +343,8 @@ body {
   }
   .speaker-desc.show {
     opacity: 1;
-    pointer-events: auto;
+    
+    pointer-events: none;
     max-height: 320px;
     padding: 2.6rem 1.3rem 3.2rem 1.3rem;
   }
@@ -355,6 +357,7 @@ body {
     padding: 0;
   }
   .speaker-desc p {
+    pointer-events: none;
     color: #dadada;
     font-size: 1.05rem;
     margin: 0;
