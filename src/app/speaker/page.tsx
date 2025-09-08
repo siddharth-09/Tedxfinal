@@ -80,7 +80,7 @@ export default function HomePage() {
         </div>
         {/* Speaker Boxes End */}
 
-        <FAQs />
+
         <Footer />
       </div>
     </>

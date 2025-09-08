@@ -147,7 +147,7 @@ export default function Bento({ images }: { images: BentoImages }) {
   };
 
   return (
-    <div className="bento-wrapper">
+    <div className="bento-wrapper" id="bento-wrapper">
       <div className="FogContainer">
         <div className="Fog"></div>
       </div>

@@ -8,14 +8,15 @@ const Footer = () => {
     <footer className="footer-grid">
       <div className="footer-nav">
         <div className="footer-col1">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Team</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/team">Team</a>
+          <a href="/speaker">Speaker</a>
         </div>
         <div className="footer-col2">
-          <a href="#">Get Tickets</a>
-          <a href="#">Gallery</a>
-          <a href="#">FAQ</a>
+          <a href="/ticketForm">Get Tickets</a>
+          <a href="/#bento-wrapper">Gallery</a>
+          <a href="/#FAQ">FAQ</a>
         </div>
       </div>
 

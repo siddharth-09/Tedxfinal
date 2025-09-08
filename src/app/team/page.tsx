@@ -152,7 +152,6 @@ export default function HomePage() {
           ))}
         </div>
 
-      <FAQs />
       <Footer />
           </div>
     </>

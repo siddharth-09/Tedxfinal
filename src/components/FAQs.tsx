@@ -44,7 +44,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="FAQ">
       <h2>Frequently Asked Questions</h2>
       <div className="faq-accordion">
         {faqData.map((faq, index) => (
