@@ -1,8 +1,8 @@
 .mainFormContainer {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .ticketMessage {
@@ -17,303 +17,271 @@
   z-index: 2;
 }
 
+.qrcode {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: #fff;
+  padding: 1rem;
+  z-index: 4;
+}
 
 .MainTicketContainer {
-    font-family: "Host Grotesk", sans-serif;
-    width: 100%;
-    min-height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    overflow: hidden;
+  font-family: "Host Grotesk", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row; /* Desktop → side by side */
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem; /* spacing between QR & form */
+  overflow: hidden;
 }
 
 .TicketNowTitle {
-    font-family: "Host Grotesk", sans-serif;
-    font-size: clamp(2rem, 5vw, 3.125rem);
-    text-align: center;
-    margin-bottom: 0;
+  font-family: "Host Grotesk", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.125rem);
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .ticketContainer {
-    position: relative;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    z-index: 3;
-    padding: 2rem;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  z-index: 3;
+  margin-top: 3%;
+  padding: 2rem;
 }
 
 .MainForm {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .ticketForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.75rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  width: 100%;
 }
 
 .ticketForm input,
 .ticketInput {
-    background: transparent;
-    border: 2px solid white;
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    padding: 1.5rem;
-    border-radius: 15px;
-    color: white;
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
+  background: transparent;
+  border: 2px solid white;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 .ticketForm input::placeholder {
-    color: white;
+  color: white;
 }
 
 .payButton {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid white;
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    font-weight: bolder;
-    padding: 2rem 4rem;
-    border-radius: 15px;
-    margin-top: 2rem;
-    color: rgb(0, 0, 0);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-    min-height: 60px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid white;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: bolder;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  min-height: 60px;
 }
 
 .payButton:hover {
-    background: linear-gradient(135deg, black, rgba(255, 255, 255, 0.096), black);
-    color: white;
+  background: linear-gradient(135deg, black, rgba(255, 255, 255, 0.096), black);
+  color: white;
 }
 
 .payButton:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .TicketFormBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .formMandala {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    animation: mandalaForm 200s linear infinite forwards;
-    transform: translateY(0%) translateX(40%) scale(2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: mandalaForm 200s linear infinite forwards;
+  transform: translateY(0%) translateX(40%) scale(2);
 }
 
 @keyframes mandalaForm {
-    0% {
-        transform: translateY(0%) translateX(40%) scale(2) rotate(0deg);
-    }
-    100% {
-        transform: translateY(0%) translateX(40%) scale(2) rotate(360deg);
-    }
+  0% {
+    transform: translateY(0%) translateX(40%) scale(2) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0%) translateX(40%) scale(2) rotate(360deg);
+  }
 }
+
+/* ---------- Responsive Fixes ---------- */
 
 /* Tablet Styles */
 @media screen and (max-width: 1024px) {
-    .MainTicketContainer {
-        padding: 1.5rem;
-    }
-    
-    .ticketContainer {
-        padding: 1.5rem;
-    }
-    
-    .MainForm {
-        margin-top: 2rem;
-    }
-    
-    .formMandala {
-        transform: translateY(0%) translateX(20%) scale(1.5);
-    }
-    
-    @keyframes mandalaForm {
-        0% {
-            transform: translateY(0%) translateX(20%) scale(1.5) rotate(0deg);
-        }
-        100% {
-            transform: translateY(0%) translateX(20%) scale(1.5) rotate(360deg);
-        }
-    }
+  /* .MainTicketContainer {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 55%;
+  }
+
+  .qrcode {
+    max-width: 280px;
+    padding: 0.75rem;
+  } */
+
+  .ticketContainer {
+    padding: 1.25rem;
+    max-width: 100%;
+  }
+
+  .formMandala {
+    transform: translateY(0%) translateX(10%) scale(1.2);
+  }
 }
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    .MainTicketContainer {
-        padding: 1rem;
-        align-items: flex-start;
-        padding-top: 2rem;
-    }
-    
-    .ticketContainer {
-        padding: 1rem;
-        width: 100%;
-    }
-    
-    .TicketNowTitle {
-        font-size: clamp(1.75rem, 6vw, 2.5rem);
-        line-height: 1.2;
-    }
-    
-    .MainForm {
-        margin-top: 2rem;
-    }
-    
-    .ticketForm {
-        gap: 1.5rem;
-    }
-    
-    .ticketForm input,
-    .ticketInput {
-        padding: 1.25rem;
-        font-size: 1rem;
-    }
-    
-    .payButton {
-        padding: 1.5rem 2rem;
-        font-size: 1rem;
-        margin-top: 1.5rem;
-    }
-    
-    .formMandala {
-        transform: translateY(10%) translateX(10%) scale(1.2);
-        opacity: 0.8;
-    }
-    
-    @keyframes mandalaForm {
-        0% {
-            transform: translateY(10%) translateX(10%) scale(1.2) rotate(0deg);
-        }
-        100% {
-            transform: translateY(10%) translateX(10%) scale(1.2) rotate(360deg);
-        }
-    }
+  .MainTicketContainer {
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 0%;
+  }
+
+  .qrcode {
+    max-width: 300px;
+    align-self: center;
+  }
+
+  .ticketContainer {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .MainForm {
+    margin-top: 2rem;
+  }
+
+  .ticketForm {
+    gap: 1.5rem;
+  }
+
+  .ticketForm input,
+  .ticketInput {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .payButton {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .formMandala {
+    animation: mandalaForm 200s linear infinite forwards;
+    opacity: 0.8;
+    transform: translateY(-2%) scale(1.2);
+  }
 }
 
 /* Small Mobile Styles */
 @media screen and (max-width: 480px) {
-    .MainTicketContainer {
-        padding: 0.75rem;
-        min-height: 100vh;
-        align-items: center;
-    }
-    
-    .ticketContainer {
-        padding: 0.75rem;
-    }
-    
-    .TicketNowTitle {
-        font-size: clamp(1.5rem, 7vw, 2rem);
-        margin-bottom: 1rem;
-    }
-    
-    .MainForm {
-        margin-top: 1.5rem;
-    }
-    
-    .ticketForm {
-        gap: 1.25rem;
-    }
-    
-    .ticketForm input,
-    .ticketInput {
-        padding: 1rem;
-        font-size: 0.95rem;
-        border-radius: 12px;
-    }
-    
-    .payButton {
-        padding: 1.25rem 1.5rem;
-        font-size: 0.95rem;
-        margin-top: 1.25rem;
-        border-radius: 12px;
-    }
-    
-    .formMandala {
-        
-        transform: translateY(-20%) translateX(0%) scale(1);
-        opacity: 0.6;
-    }
-    
-    @keyframes mandalaForm {
-        0% {
-            transform: translateY(20%) translateX(0%) scale(1) rotate(0deg);
-        }
-        100% {
-            transform: translateY(20%) translateX(0%) scale(1) rotate(360deg);
-        }
-    }
+  .MainTicketContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    margin-top: 35%;
+  }
+
+  .qrcode {
+    max-width: 300px;
+  }
+
+  .TicketNowTitle {
+    font-size: clamp(1.25rem, 6vw, 1.75rem);
+  }
+
+  .ticketForm {
+    gap: 1.25rem;
+  }
+
+  .ticketForm input,
+  .ticketInput {
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+
+  .payButton {
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    margin-top: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .formMandala {
+    transform: translateY(-20%) translateX(0%) scale(1);
+    opacity: 0.6;
+  }
 }
 
 /* Extra Small Mobile */
 @media screen and (max-width: 320px) {
-    .ticketForm input,
-    .ticketInput {
-        padding: 0.875rem;
-        font-size: 0.875rem;
-    }
-    
-    .payButton {
-        padding: 1rem 1.25rem;
-        font-size: 0.875rem;
-    }
-    
-    .TicketNowTitle {
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 1024px) {
-  .formMandala {
-    transform: translateY(0%) translateX(20%) scale(1.5);
+  .ticketForm input,
+  .ticketInput {
+    padding: 0.875rem;
+    font-size: 0.875rem;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .formMandala {
-    animation: mandalaForm 200s linear infinite forwards;
-    opacity: 0.8;
-    transform: translateY(-2%) scale(1.2) ;
+  .payButton {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
   }
-  @keyframes mandalaForm {
-    0% {
-        transform: translateY(-2%) scale(1.2) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-2%) scale(1.2) rotate(360deg);
-    }
-}
+
+  .TicketNowTitle {
+    font-size: 1.5rem;
+  }
 }

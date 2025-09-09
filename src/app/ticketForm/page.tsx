@@ -1,3 +1,4 @@
+import { TicketForm } from "./TicketForm"
 import "./TicketForm.css"
 import Image from "next/image"
 
@@ -7,7 +8,8 @@ export default function Home() {
       <div className="mainFormContainer">
         {/* <Navbar /> */}
         <div>
-          {/* <TicketForm /> */}
+          <TicketForm />
+
           <Image
             src="/formMandala.svg"
             alt=""
@@ -15,11 +17,6 @@ export default function Home() {
             width={1920}
             height={1080}
           />
-          <p className="ticketMessage">
-            Get your tickets offline at our registration desk near Canteen. <br />
-            <span className="highlight">Limited Seats left!!!</span>
-          </p>
-
         </div>
       </div>
     </>
