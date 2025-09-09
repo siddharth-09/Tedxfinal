@@ -67,7 +67,7 @@ export default function HomePage() {
       members: [
         { name: 'Chaitanya Giri', role: 'TY', department: 'CSD', imageUrl: '/GraphicDesignImages/chaitanya.JPG' },
         { name: 'Meher Rathod', role: 'SY', department: 'CSD', imageUrl: '/GraphicDesignImages/Meher Rathod.jpg' },
-        { name: 'Rudra Joshi', role: 'TY', department: 'IT', imageUrl: '/GraphicDesignImages/Rudra Joshi Ashutosh.jpg' },
+        { name: 'Rudra Joshi', role: 'TY', department: 'IT', imageUrl: '/GraphicDesignImages/Rudra Joshi Ashutosh.JPG' },
       ],
     },
     {
@@ -120,7 +120,7 @@ export default function HomePage() {
         { name: 'Dhruva Pratik Shah', role: 'TY', department: 'Mechanical', imageUrl: '/Music/Dhruva.jpeg' },
         { name: 'Harshil Dharmik', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Harshil Dharmik.jpg' },
         { name: 'Yug Kalpesh Patel', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Yug Patel.jpeg' },
-        { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/Samhita.jpg' },
+        { name: 'Samhita Gandhi', role: 'FY', department: 'IT', imageUrl: '/Music/samhita.jpg' },
         { name: 'Shubhamkumar Harshadkumar Panchal', role: 'SY', department: 'Mechanical', imageUrl: '/Music/Shubham Panchal.JPG' },
       ],
     },
