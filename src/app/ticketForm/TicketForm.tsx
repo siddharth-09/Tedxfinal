@@ -11,6 +11,7 @@ interface UserDetails {
   name: string
   email: string
   number: string
+  status?: string
 }
 
 export function TicketForm() {
@@ -19,7 +20,10 @@ export function TicketForm() {
     name: "",
     email: "",
     number: "",
+    status: "pending",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserDetails((prev) => ({
@@ -31,35 +35,67 @@ export function TicketForm() {
   const isValidUPI = (upi: string) => /^[\w.-]+@[\w.-]+$/.test(upi)
 
   const handlePayment = async (e: React.FormEvent) => {
-    e.preventDefault() // ✅ prevent refresh
+  e.preventDefault()
 
-    if (!isValidUPI(userDetails.upi_id)) {
-      alert("Please enter a valid UPI ID (e.g., username@bank)")
+  if (isSubmitting) return // prevent double submission
+  setIsSubmitting(true)
+
+  if (!isValidUPI(userDetails.upi_id)) {
+    alert("Please enter a valid UPI ID (e.g., username@bank)")
+    setIsSubmitting(false)
+    return
+  }
+
+  // ✅ Check if name already exists
+  const { data: existingUser, error: checkError } = await supabase
+    .from("upi")
+    .select("id")
+    .eq("name", userDetails.name)
+
+  if (checkError) {
+    console.error("Supabase query error:", checkError.message)
+    alert("Something went wrong. Please try again.")
+    setIsSubmitting(false)
+    return
+  }
+
+  if (existingUser && existingUser.length > 0) {
+    alert("This name is already used. Please use a different one.")
+    setIsSubmitting(false)
+    return
+  }
+
+  try {
+    const { data, error } = await supabase.from("upi").insert([userDetails])
+
+    if (error) {
+      if (error.code === "23505") {
+        alert("This name is already registered.")
+      } else {
+        console.error("Supabase insert error:", error.message)
+        alert("Something went wrong. Please try again.")
+      }
+      setIsSubmitting(false)
       return
     }
 
-    try {
-      const { data, error } = await supabase.from("upi").insert([userDetails])
+    console.log("Inserted:", data)
+    alert("Form submitted successfully!")
 
-      if (error) {
-        console.error("Supabase insert error:", error.message)
-        alert("Something went wrong. Please try again.")
-        return
-      }
-
-      console.log("Inserted:", data)
-      alert("Form submitted successfully!")
-      setUserDetails({
-        upi_id: "",
-        name: "",
-        email: "",
-        number: "",
-      })
-    } catch (err) {
-      console.error("Unexpected error:", err)
-      alert("Unexpected error occurred")
-    }
+    setUserDetails({
+      upi_id: "",
+      name: "",
+      email: "",
+      number: "",
+      status: "pending",
+    })
+  } catch (err) {
+    console.error("Unexpected error:", err)
+    alert("Unexpected error occurred")
+  } finally {
+    setIsSubmitting(false)
   }
+}
 
   return (
     <div className="MainTicketContainer">
@@ -110,9 +146,9 @@ export function TicketForm() {
               className="ticketInput"
               required
             />
-            <button type="submit" className="payButton">
-              Fill the form after payment
-            </button>
+            <button type="submit" className="payButton" disabled={isSubmitting}>
+  {isSubmitting ? "Submitting..." : "Fill the form after payment"}
+</button>
           </form>
         </div>
       </div>
