@@ -5,6 +5,19 @@
     overflow: hidden;
 }
 
+.ticketMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffe9e1; /* misty rose */
+  text-align: center;
+  z-index: 2;
+}
+
+
 .MainTicketContainer {
     font-family: "Host Grotesk", sans-serif;
     width: 100%;
