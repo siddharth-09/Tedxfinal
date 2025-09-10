@@ -100,7 +100,7 @@ export function TicketForm() {
   return (
     <div className="MainTicketContainer">
       <Image
-        src="/dhyaniqr.jpg"
+        src="/vipraqr2.jpeg"
         width={1000}
         height={1000}
         alt="QR Code"
