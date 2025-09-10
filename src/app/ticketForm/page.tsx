@@ -8,7 +8,13 @@ export default function Home() {
       <div className="mainFormContainer">
         {/* <Navbar /> */}
         <div>
-          <TicketForm />
+          {/* <TicketForm /> */}
+          <div className="ticketTextWrapper">
+          <p className="getTicketText">
+            Get the limited ticket on desk
+          </p>
+        </div>
+
 
           <Image
             src="/formMandala.svg"
